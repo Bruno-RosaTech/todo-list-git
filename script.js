@@ -5,7 +5,19 @@ function addTask() {
   if (taskText === "") return;
 
   const li = document.createElement("li");
-  li.textContent = taskText;
+
+  const span = document.createElement("span");
+  span.textContent = taskText;
+
+  const btn = document.createElement("button");
+  btn.textContent = "X";
+
+  btn.onclick = () => {
+    li.remove();
+  };
+
+  li.appendChild(span);
+  li.appendChild(btn);
 
   document.getElementById("taskList").appendChild(li);
 
