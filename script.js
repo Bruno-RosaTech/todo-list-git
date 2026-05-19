@@ -9,6 +9,11 @@ function addTask() {
   const span = document.createElement("span");
   span.textContent = taskText;
 
+  // ✔ concluir tarefa
+  span.onclick = () => {
+    span.classList.toggle("done");
+  };
+
   const btn = document.createElement("button");
   btn.textContent = "X";
 
