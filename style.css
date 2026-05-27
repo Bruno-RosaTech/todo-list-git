@@ -1,22 +1,25 @@
-/* Melhoria visual feita por Cauan */
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #16213e;
+  padding: 24px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 h1 {
   text-align: center;
+  color: #e94560;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .input-area {
@@ -26,12 +29,29 @@ h1 {
 
 input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0f3460;
+  color: white;
+}
+
+input::placeholder {
+  color: #aaa;
 }
 
 button {
-  padding: 8px;
+  padding: 10px 14px;
   cursor: pointer;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #c73652;
 }
 
 ul {
@@ -41,15 +61,16 @@ ul {
 }
 
 li {
-  background: #eee;
+  background: #0f3460;
+  color: white;
   margin-bottom: 10px;
-  padding: 8px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .done {
   text-decoration: line-through;
-  opacity: 0.6;
+  opacity: 0.5;
 }
